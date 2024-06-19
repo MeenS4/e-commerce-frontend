@@ -1,0 +1,204 @@
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+
+.heading {
+  // font size 110px
+  &--110 {
+    font-size: 110px;
+    line-height: 115px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 90px
+  &--90 {
+    font-size: 90px;
+    line-height: 98px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 64px
+  &--64 {
+    font-size: 64px;
+    line-height: 68px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 54px
+  &--54 {
+    font-size: 54px;
+    line-height: 64px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 48px
+  &--48 {
+    font-size: 48px;
+    line-height: 60px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 36px
+  &--36 {
+    font-size: 36px;
+    line-height: 48px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 32px
+  &--32 {
+    font-size: 32px;
+    line-height: 30px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 24px
+  &--24 {
+    font-size: 24px;
+    line-height: 24px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+
+  // font size 20px
+  &--20 {
+    font-size: 20px;
+    line-height: 20px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+
+    &b {
+      font-weight: $bold;
+    }
+  }
+}
