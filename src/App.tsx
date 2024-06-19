@@ -1,3 +1,5 @@
+import { HomePageView } from "./libs";
+
 export const App = () => {
-  return <div>Hello world!</div>;
+  return <HomePageView />;
 };
