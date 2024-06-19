@@ -22,4 +22,5 @@ export type TextProps = {
   children: ReactNode | string;
   type: TextTypes;
   color?: string;
+  classname?: string;
 };
