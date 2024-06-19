@@ -1,0 +1,90 @@
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+
+.text {
+  // font size 12px
+  &--12 {
+    font-size: 12px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+  }
+
+  // font size 14px
+  &--14 {
+    font-size: 14px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+  }
+
+  // font size 16px
+  &--16 {
+    font-size: 16px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+  }
+
+  // font size 20px
+  &--20 {
+    font-size: 20px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+  }
+
+  //font size 24px
+  &--24 {
+    font-size: 24px;
+
+    &r {
+      font-weight: $regular;
+    }
+
+    &m {
+      font-weight: $medium;
+    }
+
+    &sb {
+      font-weight: $semibold;
+    }
+  }
+}
