@@ -6,6 +6,6 @@ export const Icon = ({ src, alt, className }: IconProps) => {
   const iconClassNames = classNames(styles["icon"], className);
 
   return (
-    <img className={iconClassNames} src={`assets/icons/${src}}`} alt={alt} />
+    <img className={iconClassNames} src={`assets/icons/${src}`} alt={alt} />
   );
 };

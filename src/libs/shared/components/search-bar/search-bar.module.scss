@@ -1,0 +1,42 @@
+.search-bar {
+  height: max-content;
+
+  flex-grow: 1;
+
+  display: flex;
+  gap: 34px;
+
+  padding: 7px 12px 7px 20px;
+  border-radius: 4px;
+
+  background-color: #f5f5f5;
+
+  &__input-wrapper {
+    width: 100%;
+
+    &__input {
+      display: inline-block;
+
+      width: auto;
+      min-width: 180px;
+
+      // width: 100%;
+
+      padding: 0px;
+
+      border: none;
+      outline: none;
+
+      background-color: transparent;
+
+      &:active {
+        border: none;
+      }
+    }
+  }
+
+  &__suffix {
+    width: 24px;
+    height: 24px;
+  }
+}
