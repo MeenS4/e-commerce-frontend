@@ -14,7 +14,7 @@ export enum ButtonVariants {
 export type ButtonProps = {
   children: ReactNode | string;
   onClick: Function;
-  type?: ButtonTypes;
+  type: ButtonTypes;
   variant?: ButtonVariants;
   className?: string;
 };

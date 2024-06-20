@@ -24,6 +24,7 @@ $sizes: (
 
       @each $weight, $value in $weights {
         &#{$weight} {
+          font-size: #{$size}px;
           font-weight: $value;
         }
       }
