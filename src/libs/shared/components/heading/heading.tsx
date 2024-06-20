@@ -2,11 +2,11 @@ import classNames from "classnames";
 import styles from "./heading.module.scss";
 import { HeadingProps } from "./heading.types";
 
-export const Heading = ({ children, type, color, classname }: HeadingProps) => {
+export const Heading = ({ children, type, color, className }: HeadingProps) => {
   const headingClassNames = classNames(
     styles["heading"],
     styles[`heading--${type}`],
-    classname
+    className
   );
 
   return (

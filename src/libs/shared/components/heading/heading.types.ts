@@ -43,5 +43,5 @@ export type HeadingProps = {
   children: ReactNode | string;
   type: HeadingTypes;
   color?: string;
-  classname?: string;
+  className?: string;
 };
