@@ -1,12 +1,9 @@
-import { Grid, Text } from "../../shared/components";
-import { TextTypes } from "../../shared/components/text/text.types";
+import { Header } from "../../shared/sections";
 
 export const HomePageView = () => {
   return (
     <main>
-      <Grid>
-        <Text type={TextTypes["12sb"]}>Hello world!</Text>
-      </Grid>
+      <Header />
     </main>
   );
 };

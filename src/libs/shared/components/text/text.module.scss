@@ -2,94 +2,31 @@ $regular: 400;
 $medium: 500;
 $semibold: 600;
 
+$weights: (
+  r: $regular,
+  m: $medium,
+  sb: $semibold,
+);
+
+$sizes: (
+  12: 18px,
+  14: 21px,
+  16: 24px,
+  20: 26px,
+  24: 32px,
+);
+
 .text {
-  // font size 12px
-  &--12 {
-    font-size: 12px;
-    line-height: 18px;
+  @each $size, $line-height in $sizes {
+    &--#{$size} {
+      font-size: #{$size}px;
+      line-height: $line-height;
 
-    &r {
-      font-weight: $regular;
-    }
-
-    &m {
-      font-weight: $medium;
-    }
-
-    &sb {
-      font-weight: $semibold;
-    }
-  }
-
-  // font size 14px
-  &--14 {
-    font-size: 14px;
-    line-height: 21px;
-
-    &r {
-      font-weight: $regular;
-    }
-
-    &m {
-      font-weight: $medium;
-    }
-
-    &sb {
-      font-weight: $semibold;
-    }
-  }
-
-  // font size 16px
-  &--16 {
-    font-size: 16px;
-    line-height: 24px;
-
-    &r {
-      font-weight: $regular;
-    }
-
-    &m {
-      font-weight: $medium;
-    }
-
-    &sb {
-      font-weight: $semibold;
-    }
-  }
-
-  // font size 20px
-  &--20 {
-    font-size: 20px;
-    line-height: 26px;
-
-    &r {
-      font-weight: $regular;
-    }
-
-    &m {
-      font-weight: $medium;
-    }
-
-    &sb {
-      font-weight: $semibold;
-    }
-  }
-
-  //font size 24px
-  &--24 {
-    font-size: 24px;
-    line-height: 32px;
-
-    &r {
-      font-weight: $regular;
-    }
-
-    &m {
-      font-weight: $medium;
-    }
-
-    &sb {
-      font-weight: $semibold;
+      @each $weight, $value in $weights {
+        &#{$weight} {
+          font-weight: $value;
+        }
+      }
     }
   }
 }
