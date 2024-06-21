@@ -4,3 +4,4 @@ export * from "./heading";
 export * from "./button";
 export * from "./search-bar";
 export * from "./icon";
+export * from "./dropdown";
