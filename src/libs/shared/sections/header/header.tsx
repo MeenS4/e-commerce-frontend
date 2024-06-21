@@ -10,19 +10,19 @@ export const Header = () => {
         <Heading type={HeadingTypes["24b"]}>Exclusive</Heading>
 
         <div className={styles["header__buttons"]}>
-          <Button type={ButtonTypes.text} onClick={() => {}}>
+          <Button type={ButtonTypes["text-animated"]} onClick={() => {}}>
             Home
           </Button>
 
-          <Button type={ButtonTypes.text} onClick={() => {}}>
+          <Button type={ButtonTypes["text-animated"]} onClick={() => {}}>
             Contact
           </Button>
 
-          <Button type={ButtonTypes.text} onClick={() => {}}>
+          <Button type={ButtonTypes["text-animated"]} onClick={() => {}}>
             About
           </Button>
 
-          <Button type={ButtonTypes.text} onClick={() => {}}>
+          <Button type={ButtonTypes["text-animated"]} onClick={() => {}}>
             Sign Up
           </Button>
         </div>

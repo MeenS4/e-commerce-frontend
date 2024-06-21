@@ -1,8 +1,10 @@
-import { Header } from "../../shared/sections";
+import { Header, HeaderCta } from "../../shared/sections";
 
 export const HomePageView = () => {
   return (
     <main>
+      <HeaderCta />
+
       <Header />
     </main>
   );
