@@ -4,6 +4,7 @@ export enum ButtonTypes {
   "default" = "default",
   "outlined" = "outlined",
   "text" = "text",
+  "text-animated" = "text-animated",
 }
 
 export enum ButtonVariants {
