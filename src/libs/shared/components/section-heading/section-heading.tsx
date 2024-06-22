@@ -1,11 +1,18 @@
+import classNames from "classnames";
 import { Heading, HeadingTypes } from "../heading";
 import { Text, TextTypes } from "../text";
 import styles from "./section-heading.module.scss";
 import { SectionHeadingProps } from "./section-heading.types";
 
-export const SectionHeading = ({ title, subTitle }: SectionHeadingProps) => {
+export const SectionHeading = ({
+  title,
+  subTitle,
+  className,
+}: SectionHeadingProps) => {
+  const headingClassNames = classNames(styles["section-heading"], className);
+
   return (
-    <div className={styles["section-heading"]}>
+    <div className={headingClassNames}>
       <div className={styles["section-heading__category-rect"]} />
 
       <Text
