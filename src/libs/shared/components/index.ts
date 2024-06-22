@@ -5,3 +5,5 @@ export * from "./button";
 export * from "./search-bar";
 export * from "./icon";
 export * from "./dropdown";
+export * from "./section-heading";
+export * from "./offer-timer";

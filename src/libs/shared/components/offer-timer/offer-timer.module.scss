@@ -1,0 +1,37 @@
+//styling for Semicolon component
+.semicolon {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  margin-inline: 17px;
+  padding-top: 20px;
+
+  &__element {
+    height: 4px;
+    width: 4px;
+
+    border-radius: 100%;
+
+    background-color: #e07575;
+  }
+}
+
+//styling for TimeUnit component
+.time-unit {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+//*styling for main component, OfferTimer
+.offer-timer {
+  display: flex;
+  align-items: center;
+
+  margin: 24px;
+
+  user-select: none;
+}
