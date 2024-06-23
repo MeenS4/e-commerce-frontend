@@ -15,7 +15,6 @@ const PRODUCT_CATEGORIES = [
     title: "Smartwaches",
     iconSrc: "smartwatch",
   },
-
   {
     title: "Headphones",
     iconSrc: "headphones",
