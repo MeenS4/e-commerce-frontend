@@ -1,5 +1,11 @@
+import { MutableRefObject, useRef } from "react";
 import { ProductCategory } from "../../../home-page";
-import { Grid, ScrollControls, SectionHeading } from "../../components";
+import {
+  ControlButtonTypes,
+  Grid,
+  ScrollControls,
+  SectionHeading,
+} from "../../components";
 import styles from "./browse-by-category.module.scss";
 
 const PRODUCT_CATEGORIES = [
@@ -38,6 +44,16 @@ const PRODUCT_CATEGORIES = [
 ];
 
 export const BrowseByCategory = () => {
+  const scrollPanelRef: MutableRefObject<any> = useRef(null);
+
+  const handleScrollControlsClick = (buttonType: ControlButtonTypes) => {
+    if (buttonType === ControlButtonTypes.next) {
+      scrollPanelRef.current.scrollLeft += 100;
+    } else {
+      scrollPanelRef.current.scrollLeft -= 100;
+    }
+  };
+
   return (
     <section className={styles["browse"]}>
       <Grid>
@@ -47,7 +63,7 @@ export const BrowseByCategory = () => {
           subTitle="Categories"
         />
 
-        <div className={styles["browse__categories"]}>
+        <div className={styles["browse__categories"]} ref={scrollPanelRef}>
           {PRODUCT_CATEGORIES.map((category) => {
             const { title, iconSrc } = category;
 
@@ -60,7 +76,10 @@ export const BrowseByCategory = () => {
           })}
         </div>
 
-        <ScrollControls className={styles["browse__controls"]} />
+        <ScrollControls
+          onClick={handleScrollControlsClick}
+          className={styles["browse__controls"]}
+        />
       </Grid>
     </section>
   );
