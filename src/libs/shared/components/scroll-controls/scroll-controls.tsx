@@ -7,10 +7,10 @@ import {
   ScrollControlsProps,
 } from "./scroll-controls.types";
 
-const ControlButton = ({ type }: ControlButtonProps) => {
+const ControlButton = ({ onClick, type }: ControlButtonProps) => {
   if (type === ControlButtonTypes.next) {
     return (
-      <div className={styles["button"]}>
+      <div onClick={() => onClick(type)} className={styles["button"]}>
         <Icon
           className={styles["button__icon"]}
           src="components/arrow-right.svg"
@@ -20,7 +20,7 @@ const ControlButton = ({ type }: ControlButtonProps) => {
     );
   } else {
     return (
-      <div className={styles["button"]}>
+      <div onClick={() => onClick(type)} className={styles["button"]}>
         <Icon
           className={styles["button__icon"]}
           src="components/arrow-left.svg"
@@ -31,13 +31,13 @@ const ControlButton = ({ type }: ControlButtonProps) => {
   }
 };
 
-export const ScrollControls = ({ className }: ScrollControlsProps) => {
+export const ScrollControls = ({ onClick, className }: ScrollControlsProps) => {
   const controlsClassNames = classNames(styles["controls"], className);
   return (
     <div className={controlsClassNames}>
-      <ControlButton type={ControlButtonTypes.back} />
+      <ControlButton onClick={onClick} type={ControlButtonTypes.back} />
 
-      <ControlButton type={ControlButtonTypes.next} />
+      <ControlButton onClick={onClick} type={ControlButtonTypes.next} />
     </div>
   );
 };

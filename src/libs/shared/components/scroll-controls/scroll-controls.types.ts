@@ -4,9 +4,11 @@ export enum ControlButtonTypes {
 }
 
 export type ControlButtonProps = {
+  onClick: Function;
   type: ControlButtonTypes;
 };
 
 export type ScrollControlsProps = {
+  onClick: Function;
   className?: string;
 };
