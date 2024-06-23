@@ -1,5 +1,5 @@
 import { ProductCategory } from "../../../home-page";
-import { Grid, SectionHeading } from "../../components";
+import { Grid, ScrollControls, SectionHeading } from "../../components";
 import styles from "./browse-by-category.module.scss";
 
 const PRODUCT_CATEGORIES = [
@@ -59,6 +59,8 @@ export const BrowseByCategory = () => {
             );
           })}
         </div>
+
+        <ScrollControls className={styles["browse__controls"]} />
       </Grid>
     </section>
   );
