@@ -6,3 +6,7 @@ export enum ControlButtonTypes {
 export type ControlButtonProps = {
   type: ControlButtonTypes;
 };
+
+export type ScrollControlsProps = {
+  className?: string;
+};

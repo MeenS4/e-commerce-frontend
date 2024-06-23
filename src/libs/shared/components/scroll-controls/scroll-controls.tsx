@@ -1,8 +1,10 @@
+import classNames from "classnames";
 import { Icon } from "../icon";
 import styles from "./scroll-controls.module.scss";
 import {
   ControlButtonProps,
   ControlButtonTypes,
+  ScrollControlsProps,
 } from "./scroll-controls.types";
 
 const ControlButton = ({ type }: ControlButtonProps) => {
@@ -29,9 +31,10 @@ const ControlButton = ({ type }: ControlButtonProps) => {
   }
 };
 
-export const ScrollControls = () => {
+export const ScrollControls = ({ className }: ScrollControlsProps) => {
+  const controlsClassNames = classNames(styles["controls"], className);
   return (
-    <div className={styles["controls"]}>
+    <div className={controlsClassNames}>
       <ControlButton type={ControlButtonTypes.back} />
 
       <ControlButton type={ControlButtonTypes.next} />

@@ -10,6 +10,14 @@
   background-color: #f5f5f5;
   border-radius: 100%;
 
+  cursor: pointer;
+
+  height: min-content;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   &__icon {
     width: 24px;
     height: 24px;
