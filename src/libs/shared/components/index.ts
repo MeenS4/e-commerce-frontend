@@ -7,3 +7,4 @@ export * from "./icon";
 export * from "./dropdown";
 export * from "./section-heading";
 export * from "./offer-timer";
+export * from "./scroll-controls";
