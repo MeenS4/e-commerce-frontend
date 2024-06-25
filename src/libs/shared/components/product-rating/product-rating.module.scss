@@ -1,0 +1,19 @@
+.rating {
+  display: flex;
+  gap: 8px;
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__star {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__number {
+    opacity: 0.5;
+  }
+}
