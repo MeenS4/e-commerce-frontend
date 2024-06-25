@@ -9,3 +9,5 @@ export * from "./section-heading";
 export * from "./offer-timer";
 export * from "./scroll-controls";
 export * from "./divider";
+export * from "./product-card";
+export * from "./product-rating";
