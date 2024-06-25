@@ -64,11 +64,12 @@ export const BrowseByCategory = () => {
         />
 
         <div className={styles["browse__categories"]} ref={scrollPanelRef}>
-          {PRODUCT_CATEGORIES.map((category) => {
+          {PRODUCT_CATEGORIES.map((category, i) => {
             const { title, iconSrc } = category;
 
             return (
               <ProductCategory
+                key={`${i}`}
                 title={title}
                 iconSrc={`components/${iconSrc}.svg`}
               />
