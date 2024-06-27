@@ -1,3 +1,4 @@
+import { DiscountBadge } from "../discount-badge";
 import { Icon } from "../icon";
 import { ProductRating } from "../product-rating";
 import { Text, TextTypes } from "../text";
@@ -46,6 +47,14 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           src={imgSrc}
           alt="product"
         />
+
+        {discountPrice ? (
+          <DiscountBadge
+            discountPercent={Math.round(
+              ((discountPrice - price) / discountPrice) * 100
+            )}
+          />
+        ) : null}
 
         {/* action icons */}
         <div className={styles["product-card__image-section__icons"]}>
