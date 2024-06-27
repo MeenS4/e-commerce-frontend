@@ -9,8 +9,6 @@ export const ProductRating = ({
   numberOfRatings,
 }: ProductRatingProps) => {
   const renderRatingStars = (rating: number) => {
-    console.log(`Rating for product : ${rating}`);
-
     let isRatingEven = Number.isInteger(rating); //Flag to check either rating is even or not. Used later to indicate if "half star" should be generated.
 
     let flooredRating = Math.floor(rating); //Contains floored rating | rating = 3.5; flooredRating = 3.0; etc.
