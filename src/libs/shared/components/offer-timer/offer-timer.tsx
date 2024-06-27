@@ -23,7 +23,7 @@ const TimeUnit = ({ unit, value }: TimeUnitProps) => {
   );
 };
 
-export const OfferTimer = () => {
+export const OfferTimer = ({ className }: { className?: string }) => {
   return (
     <div className={styles["offer-timer"]}>
       <TimeUnit unit={TimeUnitTypes.days} value={"03"} />
