@@ -1,6 +1,6 @@
 import { Divider } from "../../shared/components";
 import { BrowseByCategory, Header, HeaderCta } from "../../shared/sections";
-import { Bestsellers } from "../sections";
+import { Bestsellers, FlashSales } from "../sections";
 
 export const HomePageView = () => {
   return (
@@ -8,6 +8,8 @@ export const HomePageView = () => {
       <HeaderCta />
 
       <Header />
+
+      <FlashSales />
 
       <Divider isFullWidth={true} />
 
