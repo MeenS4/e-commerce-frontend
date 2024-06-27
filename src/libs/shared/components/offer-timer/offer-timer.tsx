@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import { Heading, HeadingTypes } from "../heading";
 import { Text, TextTypes } from "../text";
 import styles from "./offer-timer.module.scss";
@@ -24,8 +25,10 @@ const TimeUnit = ({ unit, value }: TimeUnitProps) => {
 };
 
 export const OfferTimer = ({ className }: { className?: string }) => {
+  const timerClassNames = classNames(styles["offer-timer"], className);
+
   return (
-    <div className={styles["offer-timer"]}>
+    <div className={timerClassNames}>
       <TimeUnit unit={TimeUnitTypes.days} value={"03"} />
       <Semicolon />
 
