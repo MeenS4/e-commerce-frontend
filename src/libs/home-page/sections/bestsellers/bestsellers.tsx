@@ -62,8 +62,9 @@ export const Bestsellers = () => {
         </Button>
 
         <div className={styles["bestsellers__products"]}>
-          {BESTSELLERS.map((product) => (
+          {BESTSELLERS.map((product, i) => (
             <ProductCard
+              key={`${product.title} ${i}`}
               product={{
                 title: product.title,
                 price: product.price,
