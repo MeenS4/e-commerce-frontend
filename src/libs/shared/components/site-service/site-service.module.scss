@@ -1,0 +1,28 @@
+.service {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 8px;
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    &__icon {
+      height: 40px;
+      width: 40px;
+
+      position: absolute;
+      z-index: 1;
+    }
+
+    &__background {
+      height: 80px;
+      width: 80px;
+    }
+  }
+}

@@ -12,3 +12,4 @@ export * from "./divider";
 export * from "./product-card";
 export * from "./product-rating";
 export * from "./discount-badge";
+export * from "./site-service";
