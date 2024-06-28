@@ -1,5 +1,10 @@
 import { Divider } from "../../shared/components";
-import { BrowseByCategory, Header, HeaderCta } from "../../shared/sections";
+import {
+  BrowseByCategory,
+  Header,
+  HeaderCta,
+  Services,
+} from "../../shared/sections";
 import { Bestsellers, FlashSales } from "../sections";
 
 export const HomePageView = () => {
@@ -18,6 +23,8 @@ export const HomePageView = () => {
       <Divider />
 
       <Bestsellers />
+
+      <Services />
     </main>
   );
 };
