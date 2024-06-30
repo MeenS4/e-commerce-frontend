@@ -1,6 +1,7 @@
 import { Divider } from "../../shared/components";
 import {
   BrowseByCategory,
+  Footer,
   Header,
   HeaderCta,
   Services,
@@ -25,6 +26,8 @@ export const HomePageView = () => {
       <Bestsellers />
 
       <Services />
+
+      <Footer />
     </main>
   );
 };
